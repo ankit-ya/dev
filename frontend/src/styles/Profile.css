@@ -1,0 +1,160 @@
+.profile-container {
+  max-width: 100%; /* Increase max width */
+  margin: 0 auto; /* Keep it centered */
+ 
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Allow vertical scrolling */
+  max-height: 80vh; /* Limit height for scrolling */
+  width: 100% !important; 
+
+  
+}
+
+  
+  .profile-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2, h3 {
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  input, select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .save-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .save-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .react-tel-input {
+    width: 100%;
+    position: relative;
+  }
+  
+  .react-tel-input .form-control {
+    width: 100%;  /* Ensure full width */
+    padding: 10px 10px 10px 50px; /* Space for the flag */
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    height: 40px; /* Match input field height */
+  }
+  
+  .react-tel-input .flag-dropdown {
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 45px; /* Ensure flag box is the right size */
+    height: 40px; /* Match input height */
+    
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Ensure flag dropdown aligns properly */
+  .react-tel-input .selected-flag {
+    padding: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Fix flag and input alignment */
+  .react-tel-input .flag {
+    width: 20px !important;
+    height: 15px !important;
+  }
+  
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+   
+  
+    input, select {
+      padding: 8px;
+    }
+  
+    .save-btn {
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-container {
+      max-width: 100%;
+      padding: 1px;
+    }
+    [class*="MuiContainer-root"] {
+        padding-left: 0px !important;
+       
+    }
+  
+    .profile-card {
+      padding: 15px;
+    }
+  
+    input, select {
+      padding: 6px;
+    }
+  
+    .save-btn {
+      padding: 6px;
+    }
+  
+    h2 {
+      font-size: 24px; /* Smaller heading for mobile */
+    }
+  
+    h3 {
+      font-size: 20px; /* Smaller subheading for mobile */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .profile-container {
+      max-width: 800px; /* Maintain max-width for larger screens */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .profile-container {
+      max-width: 1200px; /* Increase max-width for larger displays */
+    }
+  }
+  
+  @media (min-width: 600px) {
+    [class*="MuiContainer-root"] {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}

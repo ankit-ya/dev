@@ -1,0 +1,230 @@
+/* General Styles */
+.dashboardContainer {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transition: transform 0.3s ease-in-out, width 0.3s;
+    z-index: 1000;
+  }
+  
+  .sidebar.closed {
+    width: 60px;
+    transform: translateX(0);
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar.closed ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  
+  .sidebar.closed ul li {
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+  }
+  
+  .sidebar.closed ul li span {
+    display: none; /* Hide text when sidebar is closed */
+  }
+  
+  /* Sidebar Menu Items */
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .sidebar ul li:hover {
+    background: #ddd;
+  }
+  
+  /* Icons inside the sidebar */
+  .menuIcon {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  /* Adjust icons when sidebar is closed */
+  .sidebar.closed .menuIcon {
+    margin-right: 0;
+    font-size: 22px;
+  }
+  
+  /* Sidebar Toggle Button */
+  .sidebarToggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    z-index: 1100;
+    transition:background 0.3s
+  }
+  .sidebarToggle:hover{
+    background:#0056b3
+  }
+  
+  /* Top Navbar (Aligned to Left) */
+  .topNavbar {
+    position: fixed;
+    top: 15px;
+    left: 270px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .sidebar.closed ~ .dashboardContent {
+    margin-left: 60px;
+  }
+  
+  .topNavbar button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .topNavbar button:hover {
+    background: #0056b3;
+  }
+  
+  /* Logout Button */
+  .logoutBtn {
+    margin-top: auto;
+    padding: 10px;
+    background: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    transition: background 0.3s, border 0.3s;
+  }
+  
+  .logoutBtn:hover {
+    background: #e0e0e0;
+    border: 1px solid #bbb;
+  }
+  
+  /* Sidebar Header */
+  .sidebarHeader {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    height: 40px;
+    padding-left: 32px;
+  }
+  
+  .sidebarLogo {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .sidebarCompanyName {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    color: black;
+  }
+  
+  /* Dashboard Content */
+  .dashboardContent {
+    flex-grow: 1;
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+    margin-top: 50px;
+  }
+  
+  .sidebar.closed ~ .dashboardContent {
+    margin-left: 40px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .sidebar {
+      width: 200px;
+    }
+    .dashboardContent {
+      margin-left: 200px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      position: absolute;
+      width: 200px;
+      transform: translateX(-100%);
+    }
+    .sidebar.open {
+      transform: translateX(0);
+    }
+    .dashboardContent {
+      margin-left: 0;
+    }
+    .topNavbar {
+      right: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sidebar {
+      width: 100%;
+    }
+    .dashboardContent {
+      padding: 10px;
+      margin-left: 0;
+    }
+    .topNavbar {
+      right: 5px;
+    }
+  }
+  
+  /* Add a thin border to all main containers */
+  .dashboardContainer,
+  .sidebar,
+  .sidebar ul li,
+  .sidebarToggle,
+  .topNavbar {
+    border-bottom: 2px solid #aaa;
+  }

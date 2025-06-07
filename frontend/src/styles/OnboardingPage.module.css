@@ -1,0 +1,106 @@
+/* General styles for all onboarding pages */
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Left Section: Green Background */
+.leftSection {
+  flex: 1;
+  background-color: #007bff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 140px;
+  text-align: center;
+}
+
+.leftSection h1 {
+  color: #333; /* Dark Text */
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.leftSection img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.leftSection p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Right Section: Content Area */
+.rightSection {
+  flex: 3;
+  background-color: #fff; /* White Background */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .leftSection {
+      padding: 50px;
+  }
+
+  .leftSection h1 {
+      font-size: 2rem;
+  }
+
+  .rightSection {
+      padding: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+      flex-direction: column; /* Stack sections vertically */
+      height: auto;
+  }
+
+  .leftSection {
+      padding: 40px;
+  }
+
+  .leftSection h1 {
+      font-size: 1.8rem;
+  }
+
+  .rightSection {
+      padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .leftSection {
+      padding: 20px;
+  }
+
+  .leftSection h1 {
+      font-size: 1.5rem;
+  }
+
+  .leftSection img {
+      max-width: 70%;
+  }
+
+  .leftSection p {
+      font-size: 0.9rem;
+  }
+
+  .rightSection {
+      padding: 15px;
+  }
+}

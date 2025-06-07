@@ -1,0 +1,25 @@
+.container {
+  padding: 20px;
+  max-height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Vertical scrollbar */
+}
+
+.backButton {
+  margin-bottom: 20px;
+}
+
+.shadow-sm {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo {
+  margin-top: 10px;
+  width: 80px; /* Adjust width */
+  height: 60px; /* Adjust height */
+  border-radius: 4px; /* Rectangular shape */
+  object-fit: cover;
+}
+
+.addButton {
+  margin-top: 20px;
+}

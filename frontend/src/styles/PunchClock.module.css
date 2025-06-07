@@ -1,0 +1,187 @@
+/* General Styles */
+.punch-clock {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 100vh; /* Limit the height to the viewport */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Punch Clock Container */
+.punchClockContainer {
+    max-width: 1200px; /* Limit the width for larger screens */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-height: 100vh; /* Limit the height to the viewport */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Table Container */
+.attendance-history-container {
+    width: 100%;
+    max-height: 400px; /* Fixed height for scrolling */
+    overflow-y: auto; /* Allow vertical scrolling */
+    margin-top: 20px;
+    border: 1px solid #ddd; /* Optional: add a border for clarity */
+    border-radius: 5px; /* Optional: round corners */
+    background-color: #fff; /* Optional: background color */
+    padding: 10px; /* Optional: padding for inner content */
+}
+
+/* Table Styling */
+.attendance-history {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.attendance-history th,
+.attendance-history td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color: black;
+}
+
+.attendance-history th {
+    background-color: #f2f2f2;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slide-btn,
+.checkout-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slide-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.checkout-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.slide-btn:hover {
+    background-color: #45a049;
+}
+
+.checkout-btn:hover {
+    background-color: #d32f2f;
+}
+
+.tableContainer {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Responsive Styles */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .punchClockContainer {
+        padding: 15px; /* Reduce padding for smaller screens */
+        max-width: 90%; /* Adjust width for tablets */
+    }
+    .tableContainer {
+        width: 100% !important;
+        overflow-x: auto !important;
+    }
+    .attendance-history-container {
+        max-height: 300px; /* Adjust for tablet size */
+    }
+
+    .attendance-history th,
+    .attendance-history td {
+        padding: 6px;
+    }
+
+    .slide-btn,
+    .checkout-btn {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .punchClockContainer {
+        padding: 10px; /* Further reduce padding for mobile screens */
+        max-width: 100%; /* Full width for mobile screens */
+    }
+
+    .tableContainer{
+        width:40% !important;
+        overflow-x: auto !important;
+    }
+    .css-70zvr5-MuiTableContainer-root {
+        width: 40% !important;
+        overflow-x: auto !important;
+    }
+
+    .css-70zvr5-MuiTableContainer-root {
+        width: auto !important;
+        overflow-x: hidden !important;
+    }
+    
+    
+    .attendance-history-container {
+        max-height: 200px; /* Adjust for mobile */
+    }
+
+    .attendance-history th,
+    .attendance-history td {
+        padding: 4px;
+    }
+
+    .slide-btn,
+    .checkout-btn {
+        width: 100%;
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+    .punchClockContainer {
+        padding: 25px;
+    }
+    .tableContainer{
+        overflow-x: auto;
+        width:100%;
+    }
+
+    .attendance-history-container {
+        max-height: 400px; /* Adjust for desktop */
+    }
+
+    .attendance-history th,
+    .attendance-history td {
+        padding: 10px;
+    }
+
+    .slide-btn,
+    .checkout-btn {
+        width: auto;
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+}

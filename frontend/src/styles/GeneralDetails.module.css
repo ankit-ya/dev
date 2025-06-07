@@ -1,0 +1,155 @@
+/* General container layout */
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Right content styling */
+.rightContent {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mainText {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.stepText {
+  font-size: 14px;
+  color: #999;
+}
+
+.headerText {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.descriptionText {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.generalDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdown,
+.phoneInput {
+  border: none;
+  border-bottom: 2px solid blue;
+  padding: 5px 10px;
+  width: 300px;
+  font-size: 16px;
+  background: transparent;
+}
+
+.dropdown:focus,
+.phoneInput:focus {
+  outline: none;
+  border-color: #81c784;
+}
+
+.nextButton {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nextButton:hover {
+  background-color: blue;
+}
+
+.nextButton:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+/* Media Queries */
+
+/* Large screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .rightContent {
+    width: 30%;
+    padding: 10px;
+  }
+  .container {
+    width: 70%;
+    padding: 10px;
+  }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .inputGroup {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .dropdown,
+  .phoneInput {
+    width: 100%; /* Full width inputs on smaller screens */
+  }
+  .rightContent {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/* Mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .rightContent {
+    padding: 15px;
+  }
+  .headerText {
+    font-size: 20px;
+  }
+  .descriptionText {
+    font-size: 14px;
+  }
+  .nextButton {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  label {
+    font-size: 0.9rem;
+  }
+  input {
+    padding: 10px;
+  }
+  button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}

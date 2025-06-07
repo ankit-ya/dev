@@ -1,0 +1,53 @@
+.container {
+  padding: 20px;
+  max-height: 80vh; /* Full viewport height */
+  overflow-y: auto; /* Vertical scrollbar */
+}
+
+.departmentBox {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.departmentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teamBox {
+  margin-top: 20px;
+}
+
+.teamHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teamDropdown {
+  max-height: 200px; /* Limit height for dropdown */
+  overflow-y: auto; /* Vertical scrollbar */
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.addButton {
+  margin-top: 20px;
+}
+
+.addDepartmentButton {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+}
+
+.saveButton {
+  margin-top: 20px;
+}

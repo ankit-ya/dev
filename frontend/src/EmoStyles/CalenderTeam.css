@@ -1,0 +1,69 @@
+/* Container for the calendar */
+.calendar-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  height: 100vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Add vertical scroll */
+}
+
+/* Header for the calendar */
+.calendar-header {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Shift details container */
+.shift-details {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding-bottom: 4rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Shift item styling */
+.shift-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Location item styling */
+.location-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .calendar-container {
+    padding: 10px;
+  }
+
+  .calendar-header {
+    font-size: 20px;
+  }
+
+  .shift-details {
+    padding: 10px;
+  }
+
+  .shift-item,
+  .location-item {
+    font-size: 12px;
+  }
+}

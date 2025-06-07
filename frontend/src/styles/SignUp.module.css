@@ -1,0 +1,174 @@
+/* General Styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    min-height: 100vh; /* Ensure it takes at least the full viewport height */
+    padding-top: 50px; /* Adjust as needed to prevent cutting */
+}
+
+.signupBox {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.inputWrapper {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.inputWrapper label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.inputWrapper input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.signUpButton {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signUpButton:hover {
+    background: #0056b3;
+}
+
+.loginLink {
+    margin-top: 15px;
+    font-size: 14px;
+    color: black;
+}
+
+.loginLink a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.loginLink a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Large Screens (max-width: 1024px) */
+@media (max-width: 1070px) {
+    .signupBox {
+        padding: 30px;
+    }
+
+    .inputWrapper input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .signUpButton {
+        font-size: 15px;
+        padding: 10px;
+    }
+    label {
+        text-align: left!important;
+    }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .signupBox {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .inputWrapper input {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .signUpButton {
+        font-size: 14px;
+        padding: 10px;
+    }
+    label {
+        text-align: left!important;
+    }
+}
+
+/* Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .signupBox {
+        padding: 15px;
+    }
+
+    .inputWrapper input {
+        font-size: 12px;
+        padding: 7px;
+    }
+
+    .signUpButton {
+        font-size: 13px;
+        padding: 8px;
+    }
+    label {
+        text-align: left;
+    }
+}
+
+/* for new  thing */
+.inputWrapper {
+    margin-bottom: 1rem;
+}
+  
+.inputWrapper label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold; /* Make labels bold for better visibility */
+}
+  
+.radioGroup {
+    display: flex;
+    flex-direction: column; /* Stack the radio buttons vertically */
+}
+  
+.radioGroup label {
+    display: flex; /* Use flex to align the radio button and text */
+    align-items: center; /* Center the radio button with the text */
+    margin-bottom: 0.5rem; /* Space between radio button options */
+}
+  
+.radioGroup input[type="radio"] {
+    margin-right: 0.5rem; /* Space between radio button and label text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    accent-color: #4f46e5; /* Change radio button color (optional, if supported) */
+    /* Adjust vertical alignment */
+    transform: translateY(30px); /* Adjust up or down as needed */
+}

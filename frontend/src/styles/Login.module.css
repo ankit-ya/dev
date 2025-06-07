@@ -1,0 +1,164 @@
+/* General Styles */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; /* Ensure it takes at least the full viewport height */
+  padding-top: 50px; /* Adjust as needed to prevent cutting */
+}
+
+.loginBox {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.inputWrapper {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.inputWrapper label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.inputWrapper input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.forgot-password a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.sign-in-button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sign-in-button:hover {
+  background: #0056b3;
+}
+
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: black;
+}
+
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Large Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .loginBox {
+    padding: 30px;
+  }
+
+  .inputWrapper input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .sign-in-button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .loginBox {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .inputWrapper input {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .sign-in-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .loginBox {
+    padding: 15px;
+  }
+
+  .inputWrapper input {
+    font-size: 12px;
+    padding: 7px;
+  }
+
+  .sign-in-button {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
+
+/* for new thing */
+.inputWrapper {
+  margin-bottom: 1rem;
+}
+
+.inputWrapper label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.inputWrapper input[type="radio"] {
+  margin-right: 0.5rem;
+}

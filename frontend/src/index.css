@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+a {
+    text-decoration: none !important;
+}
+
+/* Enhanced scrollbar styling */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Enhanced focus states */
+.focus-enhancement:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* Smooth transitions for better UX */
+* {
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, 
+                box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out;
+}
+
+/* Remove transitions for reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* Enhanced backdrop blur support */
+.backdrop-blur-fallback {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+@supports (backdrop-filter: blur(20px)) {
+    .backdrop-blur-fallback {
+        backdrop-filter: blur(20px);
+        background: rgba(255, 255, 255, 0.8);
+    }
+}
